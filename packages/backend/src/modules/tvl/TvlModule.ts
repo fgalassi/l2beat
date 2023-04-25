@@ -116,7 +116,6 @@ export function createTvlModule(
     config.tokens,
     logger,
   )
-
   const dydxController = new DydxController(aggregateReportRepository)
 
   const blocksRouter = createBlocksRouter(blocksController)

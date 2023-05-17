@@ -1,0 +1,29 @@
+{
+  "$schema": "../config.schema.json",
+  "name": "axiom",
+  "initialAddresses": ["0xF990f9CB1A0aa6B51c0720a6f4cAe577d7AbD86A"],
+  "names": {
+    "0x01d5b501C1fc0121e1411970fb79c322737025c2": "Old_Axiom",
+    "0xF990f9CB1A0aa6B51c0720a6f4cAe577d7AbD86A": "Axiom"
+  },
+  "overrides": {
+    "Old_Axiom": {
+      "fields": {
+        "getEmptyHash": {
+          "type": "array",
+          "method": "getEmptyHash",
+          "maxLength": 1000
+        }
+      }
+    },
+    "Axiom": {
+      "fields": {
+        "getEmptyHash": {
+          "type": "array",
+          "method": "getEmptyHash",
+          "maxLength": 1000
+        }
+      }
+    }
+  }
+}
